@@ -66,7 +66,7 @@ const cmToFeetConverter = (heightInCm) => {
   const feet = Math.floor(inches / 12)
   inches %= 12
 
-  const totalHeightInFt = `${feet}ft ${inches} inches`
+  const totalHeightInFt = `${feet}'${inches}`
   return totalHeightInFt
 }
 
