@@ -130,7 +130,7 @@ router.get('/film/:id', async (req, res) => {
 
     // Retrieving all films because  `film/:id` isnt same as `episode_id` returned;
     const filmResponse = (await axios.get(filmUrl)).data.results
-    const film = filmResponse.find((f) => f.episode_id === episodeId)
+    const film = filmResponse.find((f) => f.episode_id == episodeId)
 
     const comments = await Comment.findCommentsViaEpisodeIds([episodeId])
 
