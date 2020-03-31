@@ -109,10 +109,13 @@ router.post('/film/:id/comment', async (req, res) => {
       throw new Error('Comment word count exceeds 500 characters.')
     }
 
+    const splitIP = ip.split(':')
+    const parsedIP = splitIP[splitIP.length - 1]
+
     const newComment = {
       text,
       episodeId,
-      ip
+      ip: parsedIP
     }
 
     await Comment.create(newComment)
