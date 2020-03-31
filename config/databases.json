@@ -1,6 +1,6 @@
 {
   "development": {
-    "database": "nodejs-starter-dev",
+    "database": "max_dev",
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres"

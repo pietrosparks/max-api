@@ -1,6 +1,6 @@
 {
-  "name": "MLH Hackathon Node.js Starter",
-  "description": "A hackathon starting point for new Node.js applications",
+  "name": "Max Starwars API",
+  "description": "A Starwars API Endpoint",
   "repository": "https://github.com/MLH/mlh-hackathon-nodejs-starter.git",
   "logo": "https://avatars1.githubusercontent.com/u/5752708?s=100",
   "keywords": ["nodejs", "javascript"]

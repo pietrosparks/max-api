@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    build: .
+    command: npm start
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://theo@db:5432/max_dev
+  db:
+    image: postgres:9.6.2-alpine
+    environment:
+      POSTGRES_USER: theo
+      POSTGRES_DB: max_dev
