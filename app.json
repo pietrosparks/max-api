@@ -1,7 +1,7 @@
 {
   "name": "Max Starwars API",
   "description": "A Starwars API Endpoint",
-  "repository": "https://github.com/MLH/mlh-hackathon-nodejs-starter.git",
+  "repository": "https://github.com/pietrosparks/max-api.git",
   "logo": "https://avatars1.githubusercontent.com/u/5752708?s=100",
   "keywords": ["nodejs", "javascript"]
 }
