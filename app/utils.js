@@ -62,7 +62,7 @@ const jsonResolveError = (err, res, message) => {
 }
 
 const cmToFeetConverter = (heightInCm) => {
-  let inches = (heightInCm * 0.393700787).toFixed(3)
+  let inches = (heightInCm * 0.393700787).toFixed(0)
   const feet = Math.floor(inches / 12)
   inches %= 12
 

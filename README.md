@@ -10,7 +10,7 @@ This project requires the following tools:
 
 - Docker - Uses OS-level virtualization to deliver software in packages called containers.
 
-To get started, install Docker on your local computer if you don't have them already. Docker is using [here](https://docker.com/)
+To get started, install Docker on your local computer if you don't have them already. [here](https://docker.com/)
 
 ## Getting Started
 

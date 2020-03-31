@@ -126,9 +126,12 @@ router.post('/film/:id/comment', async (req, res) => {
 router.get('/film/:id', async (req, res) => {
   try {
     const episodeId = req.params.id
-    const filmUrl = `${starwarsBaseUrl}/films/${episodeId}`
+    const filmUrl = `${starwarsBaseUrl}/film`
 
-    const film = (await axios.get(filmUrl)).data
+    // Retrieving all films because  `film/:id` isnt same as `episode_id` returned;
+    const filmResponse = (await axios.get(filmUrl)).data.results
+    const film = filmResponse.find((f) => f.episode_id === episodeId)
+
     const comments = await Comment.findCommentsViaEpisodeIds([episodeId])
 
     const selectedFilmFields = {
